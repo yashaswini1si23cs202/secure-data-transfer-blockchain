@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <h1>Blockchain-Based Secure Data Transfer System</h1>
+  <p>Secure file transfer between two organizations using AES encryption,
+     SHA-256 hashing, and blockchain-based integrity verification.</p>
+  <p>
+    <a href="{{ url_for('upload') }}">Organization A: Upload a file &rarr;</a><br>
+    <a href="{{ url_for('download') }}">Organization B: Download a file &rarr;</a>
+  </p>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Upload{% endblock %}
+{% block content %}
+  <h1>Organization A &mdash; Upload File</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Encrypt &amp; Upload</button>
+  </form>
+{% endblock %}
